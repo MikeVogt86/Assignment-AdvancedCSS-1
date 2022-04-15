@@ -1,0 +1,138 @@
+@mixin flex-section {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+section {
+  .container {
+    @include flex-section();
+    right: 0;
+    top: 75%;
+    transform: translate(220px);
+  }
+  .blog {
+    text-align: left;
+    color: $social-color;
+    font-weight: normal;
+    background-color: #e17b77;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    width: 265px;
+    transform: translateX;
+    transition: 1s;
+
+    &:hover {
+      transform: translateX(-155px);
+    }
+  }
+  .twitter {
+    text-align: left;
+    color: $social-color;
+    font-weight: normal;
+    background-color: #00aced;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    width: 265px;
+    transform: translateX;
+    transition: 1s;
+
+    &:hover {
+      transform: translateX(-155px);
+    }
+  }
+  .linkedin {
+    text-align: left;
+    color: $social-color;
+    font-weight: normal;
+    background-color: #007bb6;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    width: 265px;
+    transform: translateX;
+    transition: 1s;
+
+    &:hover {
+      transform: translateX(-155px);
+    }
+  }
+  .facebook {
+    text-align: left;
+    color: $social-color;
+    font-weight: normal;
+    background-color: #3b5998;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    width: 265px;
+    transform: translateX;
+    transition: 1s;
+
+    &:hover {
+      transform: translateX(-155px);
+    }
+  }
+  .github {
+    text-align: left;
+    color: $social-color;
+    font-weight: normal;
+    background-color: #333;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    width: 265px;
+    transform: translateX;
+    transition: 1s;
+
+    &:hover {
+      transform: translateX(-155px);
+    }
+  }
+  .blog::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f5fc";
+    color: $social-color;
+    background-color: #e17b77;
+    padding-left: 8px;
+  }
+  .twitter::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f099";
+    color: $social-color;
+    background-color: #00aced;
+    padding-left: 10px;
+  }
+  .linkedin::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f0e1";
+    color: $social-color;
+    background-color: #007bb6;
+    padding-left: 10px;
+  }
+  .facebook::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f39e";
+    color: $social-color;
+    background-color: #3b5998;
+    padding-left: 12px;
+  }
+  .github::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f09b";
+    color: $social-color;
+    background-color: #333;
+    padding-left: 10px;
+  }
+}

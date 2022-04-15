@@ -1,0 +1,32 @@
+@import "./variables";
+@import "./header";
+@import "./main";
+@import "./section";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: $background-color;
+  color: $textcolor-background;
+}
+
+@media (min-width: 480px) {
+  .main {
+    grid-template-columns: repeat(1, 500px);
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    grid-template-columns: repeat(2, 500px);
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    grid-template-columns: repeat(3, 500px);
+  }
+}
