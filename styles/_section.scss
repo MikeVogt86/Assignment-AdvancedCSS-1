@@ -8,23 +8,28 @@ section {
     @include flex-section();
     right: 0;
     top: 75%;
-    transform: translate(220px);
+    transform: translate(230px);
   }
   .blog {
     text-align: left;
     color: $social-color;
     font-weight: normal;
     background-color: #e17b77;
-    padding-left: 5px;
+    padding-left: 12px;
     padding-top: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
-    width: 265px;
+    width: 260px;
+    border-radius: 5px;
     transform: translateX;
     transition: 1s;
 
     &:hover {
       transform: translateX(-155px);
+    }
+    a {
+      color: $social-color;
+      padding-left: 10px;
     }
   }
   .twitter {
@@ -32,16 +37,21 @@ section {
     color: $social-color;
     font-weight: normal;
     background-color: #00aced;
-    padding-left: 5px;
+    padding-left: 12px;
     padding-top: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
     width: 265px;
+    border-radius: 5px;
     transform: translateX;
     transition: 1s;
 
     &:hover {
       transform: translateX(-155px);
+    }
+    a {
+      color: $social-color;
+      padding-left: 10px;
     }
   }
   .linkedin {
@@ -49,16 +59,21 @@ section {
     color: $social-color;
     font-weight: normal;
     background-color: #007bb6;
-    padding-left: 5px;
+    padding-left: 12px;
     padding-top: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
     width: 265px;
+    border-radius: 5px;
     transform: translateX;
     transition: 1s;
 
     &:hover {
       transform: translateX(-155px);
+    }
+    a {
+      color: $social-color;
+      padding-left: 10px;
     }
   }
   .facebook {
@@ -66,16 +81,21 @@ section {
     color: $social-color;
     font-weight: normal;
     background-color: #3b5998;
-    padding-left: 5px;
+    padding-left: 14px;
     padding-top: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
     width: 265px;
+    border-radius: 5px;
     transform: translateX;
     transition: 1s;
 
     &:hover {
       transform: translateX(-155px);
+    }
+    a {
+      color: $social-color;
+      padding-left: 10px;
     }
   }
   .github {
@@ -83,16 +103,21 @@ section {
     color: $social-color;
     font-weight: normal;
     background-color: #333;
-    padding-left: 10px;
+    padding-left: 12px;
     padding-top: 10px;
     padding-right: 30px;
     padding-bottom: 10px;
     width: 265px;
+    border-radius: 5px;
     transform: translateX;
     transition: 1s;
 
     &:hover {
       transform: translateX(-155px);
+    }
+    a {
+      color: $social-color;
+      padding-left: 10px;
     }
   }
   .blog::before {
@@ -101,7 +126,6 @@ section {
     content: "\f5fc";
     color: $social-color;
     background-color: #e17b77;
-    padding-left: 8px;
   }
   .twitter::before {
     font-family: "Font Awesome 5 Brands";
@@ -109,7 +133,6 @@ section {
     content: "\f099";
     color: $social-color;
     background-color: #00aced;
-    padding-left: 10px;
   }
   .linkedin::before {
     font-family: "Font Awesome 5 Brands";
@@ -117,7 +140,6 @@ section {
     content: "\f0e1";
     color: $social-color;
     background-color: #007bb6;
-    padding-left: 10px;
   }
   .facebook::before {
     font-family: "Font Awesome 5 Brands";
@@ -125,7 +147,6 @@ section {
     content: "\f39e";
     color: $social-color;
     background-color: #3b5998;
-    padding-left: 12px;
   }
   .github::before {
     font-family: "Font Awesome 5 Brands";
@@ -133,6 +154,5 @@ section {
     content: "\f09b";
     color: $social-color;
     background-color: #333;
-    padding-left: 10px;
   }
 }

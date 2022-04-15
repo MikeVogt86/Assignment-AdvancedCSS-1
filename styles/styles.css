@@ -151,8 +151,8 @@ section .container {
   position: fixed;
   right: 0;
   top: 75%;
-  -webkit-transform: translate(220px);
-          transform: translate(220px);
+  -webkit-transform: translate(230px);
+          transform: translate(230px);
 }
 
 section .blog {
@@ -160,11 +160,12 @@ section .blog {
   color: white;
   font-weight: normal;
   background-color: #e17b77;
-  padding-left: 5px;
+  padding-left: 12px;
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
-  width: 265px;
+  width: 260px;
+  border-radius: 5px;
   -webkit-transform: translateX;
           transform: translateX;
   -webkit-transition: 1s;
@@ -176,16 +177,22 @@ section .blog:hover {
           transform: translateX(-155px);
 }
 
+section .blog a {
+  color: white;
+  padding-left: 10px;
+}
+
 section .twitter {
   text-align: left;
   color: white;
   font-weight: normal;
   background-color: #00aced;
-  padding-left: 5px;
+  padding-left: 12px;
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
   width: 265px;
+  border-radius: 5px;
   -webkit-transform: translateX;
           transform: translateX;
   -webkit-transition: 1s;
@@ -197,16 +204,22 @@ section .twitter:hover {
           transform: translateX(-155px);
 }
 
+section .twitter a {
+  color: white;
+  padding-left: 10px;
+}
+
 section .linkedin {
   text-align: left;
   color: white;
   font-weight: normal;
   background-color: #007bb6;
-  padding-left: 5px;
+  padding-left: 12px;
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
   width: 265px;
+  border-radius: 5px;
   -webkit-transform: translateX;
           transform: translateX;
   -webkit-transition: 1s;
@@ -218,16 +231,22 @@ section .linkedin:hover {
           transform: translateX(-155px);
 }
 
+section .linkedin a {
+  color: white;
+  padding-left: 10px;
+}
+
 section .facebook {
   text-align: left;
   color: white;
   font-weight: normal;
   background-color: #3b5998;
-  padding-left: 5px;
+  padding-left: 14px;
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
   width: 265px;
+  border-radius: 5px;
   -webkit-transform: translateX;
           transform: translateX;
   -webkit-transition: 1s;
@@ -239,16 +258,22 @@ section .facebook:hover {
           transform: translateX(-155px);
 }
 
+section .facebook a {
+  color: white;
+  padding-left: 10px;
+}
+
 section .github {
   text-align: left;
   color: white;
   font-weight: normal;
   background-color: #333;
-  padding-left: 10px;
+  padding-left: 12px;
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
   width: 265px;
+  border-radius: 5px;
   -webkit-transform: translateX;
           transform: translateX;
   -webkit-transition: 1s;
@@ -260,13 +285,17 @@ section .github:hover {
           transform: translateX(-155px);
 }
 
+section .github a {
+  color: white;
+  padding-left: 10px;
+}
+
 section .blog::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f5fc";
   color: white;
   background-color: #e17b77;
-  padding-left: 8px;
 }
 
 section .twitter::before {
@@ -275,7 +304,6 @@ section .twitter::before {
   content: "\f099";
   color: white;
   background-color: #00aced;
-  padding-left: 10px;
 }
 
 section .linkedin::before {
@@ -284,7 +312,6 @@ section .linkedin::before {
   content: "\f0e1";
   color: white;
   background-color: #007bb6;
-  padding-left: 10px;
 }
 
 section .facebook::before {
@@ -293,7 +320,6 @@ section .facebook::before {
   content: "\f39e";
   color: white;
   background-color: #3b5998;
-  padding-left: 12px;
 }
 
 section .github::before {
@@ -302,7 +328,6 @@ section .github::before {
   content: "\f09b";
   color: white;
   background-color: #333;
-  padding-left: 10px;
 }
 
 * {
